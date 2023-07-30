@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Кэт энерджи</title>
+</head>
+<body class="page-body">
+  <header class="main-header">
+    <img class="header_icon" src="#">
+    <a class="logo" href="index.html">
+      <img class="logo_image" src="#" width="128" height="24" alt="Кэт энерджи">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav_toggle" type="button">
+        <span class="visually-hidden">
+          Открыть меню
+        </span>
+      </button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list">
+          <li class="site-list__item site-list__item--active">
+            <a href="#">
+              Главная
+            </a>
+          </li>
+          <li class="site-list__item site-list__item--active">
+            <a href="#">
+              каталог продукции
+            </a>
+          </li>
+          <li class="site-list__item site-list__item--active">
+            <a href="#">
+              подбор программы
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="main-container">
+    <form class="select-program">
+      <h1 class="select-program_header">
+        Подбор программы
+      </h1>
+      <p class="select-program_description">
+        Заполните анкету, и мы подберем<br> программу питания для вашего кота
+      </p>
+      <fieldset class="select-program_group about-pet">
+        <legend class="visually-hidden">
+          Информация о питомце
+        </legend>
+        <label class="about-pet_label" for="name">
+          ИМЯ:*
+        </label>
+        <input class="about-pet_input" type="text" name="name" id="name" required>
+        <label class="about-pet_label" for="weight">
+          Вес (кг):*
+        </label>
+        <input class="about-pet_input" type="text" name="weight" id="weight" required>
+        <label class="about-pet_label" for="age">
+          Возраст (лет):
+        </label>
+        <input class="about-pet_input" type="text" name="age" id="age" required>
+      </fieldset>
+      <fieldset class="select-program_group weight">
+        <legend class="visually-hidden">
+          Масса кота
+        </legend>
+        <ul class="weight-list">
+          <li class="weight-item">
+            <label class="about-pet_radio-label">
+            <input class="about-pet_input-radio" type="radio" name="weight" value="weight-loss" checked>
+              похудение
+            </label>
+          </li>
+          <li class="weight-item">
+            <label class="about-pet_radio-label" for="weight-gain"></label>
+            <input class="about-pet_input-radio" type="radio" name="weight" value="weight-gain">
+              Набор массы
+            </label>
+          </li>
+          <li class="weight-item">
+            <label class="about-pet_radio-label">
+            <input class="about-pet_input-radio" type="radio" name="weight" value="i-dont-know">
+              Не знаю (Нужен ваш совет)
+            </label>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset class="select-program_group contacts">
+        <legend class="select-program_legend">
+          Контактные данные<br> (владельца кота)
+        </legend>
+        <label class="contacts_label" for="email">
+          E-mail:*
+        </label>
+        <input class="contacts_input" type="email" id="email" name="email" required>
+        <label class="contacts_label" for="phone">
+          Телефон:*
+        </label>
+        <input class="contacts_input" type="tel" id="phone" name="phone" required>
+      </fieldset>
+      <fieldset class="select-program_group comment">
+        <legend class="comment_legend">
+          Комментарий
+        </legend>
+        <label class="visually-hidden" for="habit">
+          Повадки питомца
+        </label>
+        <textarea class="comment_textarea" name="habit" id="habit">
+          Расскажите обо всех повАдках кота
+        </textarea>
+      </fieldset>
+      <fieldset class="select-program_group extra">
+        <legend class="extra_legend">
+          Дополнительно
+        </legend>
+        <ul class="extra_list">
+          <li class="extra-item">
+            <label class="extra_label">
+              <input class="extra_input" type="checkbox" name="extra-product" value="sweetener">
+              сахарозаменитель
+            </label>
+          </li>
+          <li class="extra-item">
+            <label class="extra_label">
+              <input class="extra_input" type="checkbox" name="extra-product" value="water">
+              питьевая вода
+          </li>
+          <li class="extra-item">
+            <label class="extra_label">
+              <input class="extra_input" type="checkbox" name="extra-product" value="milk">
+              молоко
+            </label>
+          </li>
+          <li class="extra-item">
+            <label class="extra_label">
+              <input class="extra_input" type="checkbox" name="extra-product" value="vitamins">
+              витамины
+            </label>
+          </li>
+        </ul>
+      </fieldset>
+      <button class="select-program_button" type="submit">
+        отправить заявку
+      </button>
+    </form>
+  </main>
+  <footer class="main-footer">
+    <div class="main-footer_wrapper">
+      <section class="location">
+        <div class="location_info">
+          <h5 class="locayion_header">
+            приглашаем<br> к сотрудничеству<br> дилеров!
+          </h5>
+          <address class="location_address">
+            ул. Большая<br> Конюшенная, д. 19/8<br> Санкт-Петербург
+          </address>
+        </div>
+        <img class="location_map" src="#" alt="мы на карте">
+      </section>
+      <ul class="main-footer_list">
+        <li class="main-footer_item">
+          <a class="logo" href="index.html">
+            <img class="logo_image" src="#" width="128" height="24" alt="Кэт энерджи">
+          </a>
+        </li>
+        <li class="main-footer_item">
+          <ul class="social-media">
+            <li class="social-media_item">
+              <a class="social-media_link" href="#">
+                <span class="visually-hidden">
+                  вк
+                </span>
+              </a>
+            </li>
+            <li class="social-media_item">
+              <a class="social-media_link" href="#">
+                <span class="visually-hidden">
+                  youtube
+                </span>
+              </a>
+            </li>
+            <li class="social-media_item">
+              <a class="social-media_link" href="#">
+                <span class="visually-hidden">
+                  телеграмм
+                </span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="main-footer_item">
+          <a class="htmlacademy-link">
+            <span class="visually-hidden">
+              HTML Академия
+            </span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>
