@@ -1,0 +1,895 @@
+.page {
+  height: 100%;
+}
+.page__body {
+  margin: 0;
+}
+.main-header {
+  padding-left: auto;
+  padding-right: auto;
+}
+.main-header__wrapper {
+  width: 320px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 13px 20px 14px 20px;
+  align-items: center;
+  box-sizing: border-box;
+  position: relative;
+}
+.main-header__wrapper::after {
+  content: "";
+  position: absolute;
+  background-color: #d9d9d9;
+  width: 320px;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+}
+.main-header__wrapper-position {
+  margin: 0 auto;
+}
+.main-nav {
+  position: relative;
+}
+.main-nav__toggle {
+  border: 0;
+  padding: 0;
+}
+.main-nav__toggle:focus-within .popover {
+  display: block;
+}
+.main-nav__popover {
+  width: 320px;
+}
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.popover {
+  width: 320px;
+  background-color: #ffffff;
+  position: absolute;
+  left: -277px;
+  top: 42px;
+  box-sizing: border-box;
+  display: none;
+  z-index: 5;
+}
+.popover__item {
+  width: 320px;
+  height: 66px;
+  text-align: center;
+  position: relative;
+}
+.popover__item::after {
+  content: "";
+  height: 1px;
+  width: 320px;
+  background-color: #e6e6e6;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.popover__item a {
+  text-decoration: none;
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #000000;
+  display: flex;
+  width: 320px;
+  height: 66px;
+  justify-content: center;
+  align-items: center;
+}
+.main-container {
+  margin: 0 auto;
+  width: 320px;
+}
+.main-container__title {
+  color: #000000;
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px;
+  margin: 0;
+  text-align: start;
+  padding-left: 20px;
+  margin-top: 27px;
+  margin-bottom: 41px;
+  position: relative;
+}
+.main-container__title::after {
+  content: "";
+  width: 320px;
+  position: absolute;
+  height: 1px;
+  background-color: #ebebeb;
+  bottom: -41px;
+  left: 0;
+}
+.main-information {
+  text-align: center;
+}
+.main-information__title {
+  color: #fff000;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px;
+  margin: 0;
+  margin-top: 27px;
+  margin-bottom: 25px;
+}
+.main-information__description {
+  color: #fff000;
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 29px;
+}
+.main-information__link {
+  height: 40px;
+  padding: 8px 74px 8px 74px;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #68b738;
+  text-decoration: none;
+  cursor: pointer;
+}
+.programs {
+  padding: 0 20px 0 20px;
+}
+.programs__title {
+  color: #000000;
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 37px;
+  text-transform: uppercase;
+  margin: 0;
+  margin-left: 70px;
+  margin-top: 7px;
+}
+.programs__description {
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  margin: 0;
+  color: #444444;
+  margin-top: 22px;
+}
+.programs__to-catalog {
+  color: #000000;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-top: 42px;
+  display: block;
+  text-align: start;
+  position: relative;
+}
+.programs__to-catalog::before {
+  content: "";
+  width: 240px;
+  height: 1px;
+  background-color: #d9d9d9;
+  position: absolute;
+  top: -19px;
+  left: 0;
+}
+.programs__narrow {
+  margin-left: 15px;
+}
+.programs-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.programs-list__item {
+  background-color: #f2f2f2;
+  margin-top: 20px;
+  padding: 20px;
+}
+.programs-list__maim {
+  display: flex;
+  position: relative;
+}
+.programs-list__image {
+  margin-right: 20px;
+  position: absolute;
+}
+.programs-list__image-2 {
+  left: -7px;
+  position: absolute;
+}
+.how-it-works {
+  padding: 0 20px 0 20px;
+}
+.how-it-works__title {
+  color: #000000;
+  text-align: start;
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  margin: 0;
+  margin-top: 20px;
+}
+.how-it-works__list {
+  list-style-type: none;
+  margin: 40px 0 49px 0;
+  padding: 0;
+}
+.how-it-works__item {
+  display: flex;
+  margin-bottom: 20px;
+}
+.how-it-works__item:last-child {
+  margin-bottom: 0;
+}
+.how-it-works__icon {
+  margin-right: 20px;
+}
+.how-it-works__description {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  color: #444444;
+  display: flex;
+  align-items: center;
+}
+.alive-example {
+  background-color: #eaeaea;
+  padding: 25px 20px 0 20px;
+}
+.alive-example__title {
+  color: #000000;
+  text-align: start;
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  margin: 0 0 40px 0;
+}
+.alive-example__description {
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  color: #444444;
+  margin: 0 0 20px 0;
+}
+.alive-example__expenses {
+  color: #000000;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+  margin: 20px 0 0 0;
+}
+.stats-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+}
+.stats-list__item {
+  position: relative;
+  width: 124px;
+}
+.stats-list__item:last-child {
+  margin-right: 0;
+}
+.stats-list__number {
+  color: #000000;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 8px;
+  margin-top: 15px;
+}
+.stats-list__border {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.stats-list__description {
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  color: #444444;
+  margin: 0;
+}
+.main-footer {
+  width: 320px;
+  margin: 0 auto;
+}
+.main-footer__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  background-color: #f2f2f2;
+  padding: 40px 20px 40px 20px;
+}
+.main-footer__item {
+  display: flex;
+  margin-bottom: 40px;
+  justify-content: center;
+  position: relative;
+}
+.main-footer__item::after {
+  content: "";
+  height: 1px;
+  width: 280px;
+  position: absolute;
+  bottom: -20px;
+  background-color: #d9d9d9;
+}
+.main-footer__item:last-child {
+  margin-bottom: 0;
+  display: flex;
+  justify-content: space-between;
+}
+.main-footer__item:last-child::after {
+  content: "";
+  height: 0;
+  width: 280px;
+  position: absolute;
+  bottom: -20px;
+  background-color: #d9d9d9;
+}
+.location__info {
+  padding: 26px 20px 26px 20px;
+  display: flex;
+}
+.locayion__title {
+  color: #111111;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+  margin: 0;
+}
+.location__address {
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  color: #444444;
+  margin: 0;
+}
+.social-media {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style-type: none;
+  justify-self: center;
+  flex-wrap: wrap;
+}
+.social-media__item {
+  margin-right: 26px;
+  position: relative;
+}
+.social-media__item:last-of-type {
+  margin-right: 0;
+}
+.htmlacademy__link {
+  text-decoration: none;
+  color: #444444;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+}
+.products {
+  padding: 0 20px 0 20px;
+}
+.products__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.products__list-item {
+  padding: 19px 0 25px 0;
+}
+.product {
+  position: relative;
+}
+.product::after {
+  content: "";
+  background-color: #ebebeb;
+  width: 320px;
+  height: 1px;
+  position: absolute;
+  bottom: 0;
+  left: -20px;
+}
+.product__wapper {
+  display: flex;
+}
+.product__info {
+  flex-grow: 1;
+}
+.product__title {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #222222;
+  margin: 0 0 14px 0;
+}
+.product__title-more {
+  margin-bottom: 8px;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #222222;
+  text-align: center;
+}
+.product__description {
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  color: #444444;
+  margin: 0 0 21px 0;
+}
+.product__characteristics {
+  margin: 0;
+}
+.product__characteristics-item {
+  display: flex;
+  justify-content: space-between;
+}
+.product__characteristics-description {
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  color: #444444;
+  margin: 0;
+}
+.product__characteristics-definite {
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  color: #444444;
+  margin: 0;
+}
+.product__button {
+  background-color: #f2f2f2;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #444444;
+  border: 0;
+  padding: 10px 0;
+  width: 100%;
+  cursor: pointer;
+}
+.product__link-more {
+  display: block;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  position: relative;
+  margin: 6px auto 23px auto;
+}
+.product__link-more::before,
+.product__link-more::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  background-color: #d3d3d3;
+  top: 15px;
+  left: 0px;
+}
+.product__link-more::after {
+  transform: rotate(90deg);
+}
+.order {
+  background-color: #68b738;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #ffffff;
+  border: 0;
+  padding: 10px 0;
+  width: 100%;
+  cursor: pointer;
+}
+.extra-products {
+  padding: 0 20px 0 20px;
+}
+.extra-products__title {
+  margin: 25px 0 36px 0;
+  color: #000000;
+  text-align: start;
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  position: relative;
+}
+.extra-products__title::before {
+  content: "";
+  width: 54px;
+  height: 2px;
+  position: absolute;
+  background-color: #68b738;
+  top: 16px;
+  right: -20px;
+}
+.extra-products__title::after {
+  content: "";
+  width: 280px;
+  height: 1px;
+  position: absolute;
+  background-color: #cdcdcd;
+  bottom: -36px;
+  left: 0;
+}
+.extra-products__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.extra-products__item {
+  padding: 13px 0 19px 0;
+  position: relative;
+}
+.extra-products__item::after {
+  content: "";
+  width: 280px;
+  height: 1px;
+  position: absolute;
+  background-color: #cdcdcd;
+  bottom: 0;
+  left: 0;
+}
+.extra-product-item__title {
+  margin: 0 0 13px 0;
+  text-align: start;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #222222;
+}
+.extra-product-item__quantity {
+  display: flex;
+  margin: 0 0 15px 0;
+  justify-content: space-between;
+}
+.extra-product-item__quantity-description {
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px;
+  color: #444444;
+}
+.extra-product-item__quantity-price {
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px;
+  color: #444444;
+}
+.gift {
+  margin: 35px 20px;
+  padding: 60px  60px 42px 59px;
+  background-image: url("../img/gift-cat.jpg");
+  background-color: #68b738;
+  opacity: 0.85;
+}
+.girt__icon {
+  display: block;
+  margin: 0 auto;
+}
+.gift__description {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 48px 0 0 0;
+}
+.select-program__wrapper {
+  padding: 0 20px;
+}
+.select-program__title {
+  color: #000000;
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px;
+  margin: 27px 0 37px 0;
+  text-align: start;
+}
+.select-program__description {
+  color: #000;
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-align: start;
+  margin: 0 0 39px 0;
+}
+.select-program__group {
+  border: 0;
+}
+.about-pet {
+  margin: 0;
+  padding: 0 0 24px 0;
+  position: relative;
+}
+.about-pet::after {
+  content: "";
+  background-color: #ebebeb;
+  width: 320px;
+  height: 1px;
+  position: absolute;
+  bottom: 0;
+  left: -20px;
+}
+.about-pet__label {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #444444;
+  margin-bottom: 14px;
+  height: 45px;
+  vertical-align: middle;
+  align-items: center;
+}
+.about-pet__label:last-of-type {
+  margin-bottom: 0;
+}
+.about-pet__input {
+  flex-grow: 1;
+  margin-left: 13px;
+  height: 45px;
+  display: flex;
+  box-sizing: border-box;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #444444;
+  padding: 14px 15px 13px 15px;
+  border: 1px solid #e7e7e7;
+}
+.weight {
+  padding: 22px 0 45px 0;
+  position: relative;
+}
+.weight::after {
+  content: "";
+  background-color: #ebebeb;
+  width: 320px;
+  height: 1px;
+  position: absolute;
+  bottom: 26px;
+  left: -20px;
+}
+.weight__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.weight__item {
+  margin-bottom: 13px;
+  height: 30px;
+}
+.weight__item:last-child {
+  margin-bottom: 0;
+}
+.weight__control {
+  position: relative;
+  display: block;
+  padding-left: 45px;
+  height: 30px;
+}
+.weight__control-mark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #cdcdcd;
+  box-sizing: border-box;
+}
+.weight__control-input[type="radio"] + .weight__control-mark {
+  border-radius: 50%;
+}
+.weight__control-input[type="radio"]:checked + .weight__control-mark::before {
+  position: absolute;
+  top: 7.5px;
+  left: 7.5px;
+  width: 13px;
+  height: 13px;
+  background-color: #68b738;
+  border-radius: 50%;
+  content: "";
+}
+.weight__control-label {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #444444;
+  height: 30px;
+  display: flex;
+  align-items: center;
+}
+.contacts {
+  padding: 0;
+  margin: 0;
+}
+.contacts__legend {
+  color: #000000;
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  position: relative;
+  margin-bottom: 35px;
+}
+.contacts__legend::before {
+  content: "";
+  width: 93px;
+  height: 2px;
+  position: absolute;
+  background-color: #68b738;
+  top: 18px;
+  right: -22px;
+}
+.contacts__label {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #444444;
+  margin-bottom: 14px;
+  height: 45px;
+  vertical-align: middle;
+  align-items: center;
+}
+.contacts__label:last-of-type {
+  margin-bottom: 0;
+}
+.contacts__input {
+  flex-grow: 1;
+  margin-left: 13px;
+  height: 45px;
+  display: flex;
+  box-sizing: border-box;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #444444;
+  padding: 14px 15px 13px 15px;
+  border: 1px solid #cdcdcd;
+}
+@font-face {
+  font-family: "Lato";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/lato/Lato-Regular.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Oswald";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/oswald/oswaldregular.woff2") format("woff2");
+  font-display: swap;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+/*# sourceMappingURL=style.css.map */
