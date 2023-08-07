@@ -1,0 +1,43 @@
+.popover {
+  width: 320px;
+  background-color: #ffffff;
+  position: absolute;
+  left: -277px;
+  top: 42px;
+  box-sizing: border-box;
+  display: none;
+  z-index: 5;
+}
+
+.popover__item {
+  width: 320px;
+  height: 66px;
+  text-align: center;
+  position: relative;
+
+  &::after {
+    content: "";
+    height: 1px;
+    width: 320px;
+    background-color: #e6e6e6;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+.popover__item a {
+  text-decoration: none;
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #000000;
+  display: flex;
+  width: 320px;
+  height: 66px;
+  justify-content: center;
+  align-items: center;
+}

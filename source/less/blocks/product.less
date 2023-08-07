@@ -1,0 +1,126 @@
+.product {
+  position: relative;
+
+  &::after {
+    content: "";
+    background-color: #ebebeb;
+    width: 320px;
+    height: 1px;
+    position: absolute;
+    bottom: 0;
+    left: -20px;
+  }
+}
+
+.product__wapper {
+  display: flex;
+}
+
+.product__info {
+  flex-grow: 1;
+}
+
+.product__title {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #222222;
+  margin: 0 0 14px 0;
+}
+
+.product__title-more {
+  margin-bottom: 8px;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #222222;
+  text-align: center;
+}
+
+.product__description {
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  color: #444444;
+  margin: 0 0 21px 0;
+}
+
+.product__characteristics {
+  margin: 0;
+}
+
+.product__characteristics-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product__characteristics-description {
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  color: #444444;
+  margin: 0;
+}
+
+.product__characteristics-definite {
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  color: #444444;
+  margin: 0;
+}
+
+.product__button {
+  background-color: #f2f2f2;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #444444;
+  border: 0;
+  padding: 10px 0;
+  width: 100%;
+  cursor: pointer;
+}
+
+.product__link-more {
+  display: block;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  position: relative;
+  margin: 6px auto 23px auto;
+}
+
+.product__link-more::before,
+.product__link-more::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  background-color: #d3d3d3;
+  top: 15px;
+  left: 0px;
+}
+
+.product__link-more::after {
+  transform: rotate(90deg);
+}

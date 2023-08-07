@@ -1,0 +1,52 @@
+.about-pet {
+  margin: 0;
+  padding: 0 0 24px 0;
+  position: relative;
+}
+
+.about-pet::after {
+  content: "";
+  background-color: #ebebeb;
+  width: 320px;
+  height: 1px;
+  position: absolute;
+  bottom: 0;
+  left: -20px;
+}
+
+.about-pet__label {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #444444;
+  margin-bottom: 14px;
+  height: 45px;
+  vertical-align: middle;
+  align-items: center;
+}
+
+.about-pet__label:last-of-type {
+  margin-bottom: 0;
+}
+
+.about-pet__input {
+  flex-grow: 1;
+  margin-left: 13px;
+  height: 45px;
+  display: flex;
+  box-sizing: border-box;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #444444;
+  padding: 14px 15px 13px 15px;
+  border: 1px solid #e7e7e7;
+}
