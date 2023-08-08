@@ -2,7 +2,7 @@
   width: 320px;
   background-color: #ffffff;
   position: absolute;
-  left: -277px;
+  right: -20px;
   top: 42px;
   box-sizing: border-box;
   display: none;
@@ -15,7 +15,7 @@
   text-align: center;
   position: relative;
 
-  &::after {
+  &::before {
     content: "";
     height: 1px;
     width: 320px;
@@ -26,12 +26,22 @@
   }
 }
 
+.popover__item:last-child {
+  &::after {
+    content: "";
+    height: 1px;
+    width: 320px;
+    background-color: #e6e6e6;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+}
+
 .popover__item a {
   text-decoration: none;
   font-family: "Oswald", sans-serif;
   font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
   line-height: 20px;
   text-transform: uppercase;
   color: #000000;
