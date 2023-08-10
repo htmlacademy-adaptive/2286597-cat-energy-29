@@ -158,7 +158,7 @@
 .main-information__link:hover {
   background-color: #5eaa2f;
 }
-.main-information__link:hover:active {
+.main-information__link:active {
   color: rgba(255, 255, 255, 0.3);
 }
 .programs {
@@ -526,6 +526,7 @@
   text-transform: uppercase;
   color: #222222;
   margin: 0 0 14px 0;
+  width: 80px;
 }
 .product__title-more {
   margin-bottom: 8px;
@@ -550,7 +551,7 @@
   display: flex;
   justify-content: space-between;
 }
-.product__characteristics-description {
+.product .product__characteristics-description {
   text-align: center;
   font-size: 12px;
   line-height: 16px;
@@ -584,7 +585,7 @@
 .product__button:hover {
   background-color: #ebebeb;
 }
-.product__button:hover:active {
+.product__button:active {
   color: rgba(68, 68, 68, 0.3);
 }
 .product__link-more {
@@ -626,7 +627,7 @@
 .order:hover {
   background-color: #5eaa2f;
 }
-.order:hover:active {
+.order:active {
   color: rgba(255, 255, 255, 0.3);
 }
 .extra-products {
@@ -769,7 +770,7 @@
 .select-program__button:hover {
   background-color: #5eaa2f;
 }
-.select-program__button:hover:active {
+.select-program:active {
   color: rgba(255, 255, 255, 0.3);
 }
 .select-program__important {
@@ -799,11 +800,9 @@
   justify-content: space-between;
   font-family: "Oswald", sans-serif;
   font-size: 16px;
-  font-style: normal;
   font-weight: 400;
   line-height: 18px;
   text-transform: uppercase;
-  color: #444444;
   margin-bottom: 14px;
   height: 45px;
   vertical-align: middle;
@@ -821,7 +820,6 @@
   font-family: "Oswald", sans-serif;
   font-size: 16px;
   font-weight: 400;
-  line-height: 18px;
   text-transform: uppercase;
   color: #444444;
   padding: 14px 15px 13px 15px;
@@ -881,19 +879,6 @@
   border: 1px solid #cdcdcd;
   box-sizing: border-box;
 }
-.weight__control-input[type="radio"] + .weight__control-mark {
-  border-radius: 50%;
-}
-.weight__control-input[type="radio"]:checked + .weight__control-mark::before {
-  position: absolute;
-  top: 7.5px;
-  left: 7.5px;
-  width: 13px;
-  height: 13px;
-  background-color: #68b738;
-  border-radius: 50%;
-  content: "";
-}
 .weight__control:hover .weight__control-input[type="radio"]:checked {
   border: 1px solid #bababa;
 }
@@ -904,6 +889,19 @@
   height: 30px;
   display: flex;
   align-items: center;
+}
+.weight__control-input[type="radio"] + .weight__control-mark {
+  border-radius: 50%;
+}
+.weight__control-input[type="radio"]:checked + .weight__control-mark::before {
+  position: absolute;
+  top: 8.3px;
+  left: 8.3px;
+  width: 13px;
+  height: 13px;
+  background-color: #68b738;
+  border-radius: 50%;
+  content: "";
 }
 .contacts {
   padding: 0;
@@ -933,18 +931,6 @@
 .contacts__label:last-of-type {
   margin-bottom: 0;
 }
-.contacts__input {
-  flex-grow: 1;
-  margin-left: 13px;
-  height: 45px;
-  display: flex;
-  box-sizing: border-box;
-  font-family: "Oswald", sans-serif;
-  font-size: 16px;
-  text-transform: uppercase;
-  padding: 14px 36px 13px 15px;
-  border: 1px solid #e7e7e7;
-}
 .contacts__input:hover {
   border: 1px solid #cdcdcd;
 }
@@ -961,6 +947,18 @@
   background-image: url("../img/phone-icon.svg");
   background-repeat: no-repeat;
   background-position: 170px 15px;
+}
+.contacts__input {
+  flex-grow: 1;
+  margin-left: 13px;
+  height: 45px;
+  display: flex;
+  box-sizing: border-box;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  padding: 14px 36px 13px 15px;
+  border: 1px solid #e7e7e7;
 }
 .comment {
   margin: 0 0 24px 0;
@@ -994,13 +992,13 @@
   position: relative;
 }
 .extra::before {
-  content: "";
   width: 139px;
   height: 2px;
   background-color: #68b738;
   position: absolute;
   right: -20px;
   top: -43px;
+  content: "";
 }
 .extra__list {
   margin: 0;
@@ -1032,26 +1030,6 @@
   border: 1px solid #cdcdcd;
   box-sizing: border-box;
 }
-.extra__control-input[type="checkbox"]:checked + .extra__control-mark::before {
-  position: absolute;
-  top: 12px;
-  left: 11px;
-  width: 15px;
-  height: 2px;
-  background-color: #68b738;
-  transform: rotate(135deg);
-  content: "";
-}
-.extra__control-input[type="checkbox"]:checked + .extra__control-mark::after {
-  position: absolute;
-  top: 14px;
-  left: 6px;
-  width: 10px;
-  height: 2px;
-  background-color: #68b738;
-  transform: rotate(45deg);
-  content: "";
-}
 .extra__control:hover .extra__control-input[type="radio"]:checked {
   border: 1px solid #bababa;
 }
@@ -1062,6 +1040,26 @@
   height: 30px;
   display: flex;
   align-items: center;
+}
+.extra__control-input[type="checkbox"]:checked + .extra__control-mark::before {
+  position: absolute;
+  top: 13px;
+  left: 11px;
+  width: 15px;
+  height: 2px;
+  background-color: #68b738;
+  transform: rotate(135deg);
+  content: "";
+}
+.extra__control-input[type="checkbox"]:checked + .extra__control-mark::after {
+  position: absolute;
+  top: 15px;
+  left: 5px;
+  width: 10px;
+  height: 2px;
+  background-color: #68b738;
+  transform: rotate(45deg);
+  content: "";
 }
 .logo:hover .logo__image-color {
   opacity: 0.8;
