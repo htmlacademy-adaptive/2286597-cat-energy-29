@@ -1,23 +1,25 @@
+@import "variables.less";
+
 .comment {
   margin: 0 0 24px 0;
   padding: 0;
   position: relative;
-}
 
-.comment::before {
-  content: "";
-  width: 159px;
-  height: 2px;
-  background-color: #68b738;
-  position: absolute;
-  right: -20px;
-  top: -47px;
+  &::before {
+    content: "";
+    width: 159px;
+    height: 2px;
+    background-color: @light-green;
+    position: absolute;
+    right: -20px;
+    top: -47px;
+  }
 }
 
 .comment__textarea {
   margin: 0;
   border: 1px solid #e7e7e7;
-  font-family: "Oswald", sans-serif;
+  font-family: @oswald;
   font-size: 16px;
   font-weight: 400;
   text-transform: uppercase;

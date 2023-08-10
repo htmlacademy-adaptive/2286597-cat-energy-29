@@ -1,31 +1,33 @@
+@import "variables.less";
+
 .main-nav {
   position: relative;
-}
 
-.main-nav__toggle {
-  border: 0;
-  padding: 0;
-  background-image: url("../img/burger-icon.svg");
-  background-color: #ffffff;
-  width: 24px;
-  height: 24px;
-}
+  &__toggle {
+    border: 0;
+    padding: 0;
+    background-image: url("../img/burger-icon.svg");
+    background-color: @white;
+    width: 24px;
+    height: 24px;
+  }
 
-.main-nav__toggle:focus-within {
-  background-image: url("../img/cross-popover.svg");
-  background-size: contain;
-}
+  &__toggle:focus-within {
+    background-image: url("../img/cross-popover.svg");
+    background-size: contain;
+  }
 
-.main-nav__toggle:focus-within .popover {
-  display: block;
-}
+  &__toggle:focus-within .popover {
+    display: block;
+  }
 
-.main-nav__popover {
-  width: 320px;
-}
+  &__popover {
+    width: 320px;
+  }
 
-.main-nav__list {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
 }

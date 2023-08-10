@@ -1,65 +1,67 @@
+@import "variables.less";
+
 .how-it-works {
   padding: 0 20px 0 20px;
-}
 
-.how-it-works__title {
-  color: #000000;
-  text-align: start;
-  font-family: "Oswald", sans-serif;
-  font-size: 36px;
-  font-weight: 400;
-  line-height: 40px;
-  margin: 0;
-  margin-top: 20px;
-}
+  &__title {
+    color: @black;
+    text-align: start;
+    font-family: @oswald;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 40px;
+    margin: 0;
+    margin-top: 20px;
+  }
 
-.how-it-works__list {
-  list-style-type: none;
-  margin: 40px 0 49px 0;
-  padding: 0;
-}
+  &__list {
+    list-style-type: none;
+    margin: 40px 0 49px 0;
+    padding: 0;
+  }
 
-.how-it-works__item {
-  display: flex;
-  min-height: 60px;
-  margin-bottom: 20px;
-  padding-left: 80px;
-}
+  &__item {
+    display: flex;
+    min-height: 60px;
+    margin-bottom: 20px;
+    padding-left: 80px;
+  }
 
-.how-it-works__item:nth-child(1) {
-  background-image: url("../img/leaf-icon.svg");
-  background-position: left center;
-  background-repeat: no-repeat;
-}
+  &__item:nth-child(1) {
+    background-image: url("../img/leaf-icon.svg");
+    background-position: left center;
+    background-repeat: no-repeat;
+  }
 
-.how-it-works__item:nth-child(2) {
-  background-image: url("../img/powder-icon.svg");
-  background-position: left center;
-  background-repeat: no-repeat;
-}
+  &__item:nth-child(2) {
+    background-image: url("../img/powder-icon.svg");
+    background-position: left center;
+    background-repeat: no-repeat;
+  }
 
-.how-it-works__item:nth-child(3) {
-  background-image: url("../img/cutlery-icon.svg");
-  background-position: left center;
-  background-repeat: no-repeat;
-}
+  &__item:nth-child(3) {
+    background-image: url("../img/cutlery-icon.svg");
+    background-position: left center;
+    background-repeat: no-repeat;
+  }
 
-.how-it-works__item:nth-child(4) {
-  background-image: url("../img/time-icon.svg");
-  background-position: left center;
-  background-repeat: no-repeat;
-}
+  &__item:nth-child(4) {
+    background-image: url("../img/time-icon.svg");
+    background-position: left center;
+    background-repeat: no-repeat;
+  }
 
-.how-it-works__item:last-child {
-  margin-bottom: 0;
-}
+  &__item:last-child {
+    margin-bottom: 0;
+  }
 
-.how-it-works__icon {
-  margin-right: 20px;
-}
+  &__icon {
+    margin-right: 20px;
+  }
 
-.how-it-works__description {
-  margin: 0;
-  display: flex;
-  align-items: center;
+  &__description {
+    margin: 0;
+    display: flex;
+    align-items: center;
+  }
 }

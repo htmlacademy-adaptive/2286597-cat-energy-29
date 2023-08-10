@@ -1,10 +1,15 @@
-.select-program__wrapper {
-  padding: 0 20px;
+@import "variables.less";
+
+.select-program {
+  &__wrapper {
+    padding: 0 20px;
+  }
 }
 
+
 .select-program__title {
-  color: #000000;
-  font-family: "Oswald", sans-serif;
+  color: @black;
+  font-family: @oswald;
   font-size: 36px;
   font-weight: 400;
   line-height: 36px;
@@ -13,8 +18,8 @@
 }
 
 .select-program__description {
-  color: #000000;
-  font-family: "Oswald", sans-serif;
+  color: @black;
+  font-family: @oswald;
   text-transform: uppercase;
   text-align: start;
   margin: 0 0 39px 0;
@@ -26,8 +31,8 @@
 }
 
 .select-program__group-legend {
-  color: #000000;
-  font-family: "Oswald", sans-serif;
+  color: @black;
+  font-family: @oswald;
   font-size: 24px;
   line-height: 26px;
   margin-bottom: 36px;
@@ -36,30 +41,30 @@
 
 .select-program__button {
   width: 100%;
-  background-color: #68b738;
+  background-color: @light-green;
   text-align: center;
-  font-family: "Oswald", sans-serif;
+  font-family: @oswald;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-  color: #ffffff;
+  color: @white;
   border: 0;
   padding: 10px 44px;
   box-sizing: border-box;
   cursor: pointer;
+}
 
-  &:hover {
-    background-color: #5eaa2f;
+.select-program__button:hover {
+  background-color: @dark-green;
+}
 
-    &:active {
-      color: rgba(255, 255, 255, 0.3);
-    }
-  }
+.select-program:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .select-program__important {
-  color: #000000;
+  color: @black;
   text-align: center;
   font-weight: 400;
   line-height: 16px;

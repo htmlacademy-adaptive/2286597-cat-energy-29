@@ -1,3 +1,5 @@
+@import "variables.less";
+
 .product {
   position: relative;
 
@@ -10,117 +12,118 @@
     bottom: 0;
     left: -20px;
   }
-}
 
-.product__wrapper {
-  display: flex;
-  margin-bottom: 13px;
-}
-
-.product__info {
-  flex-grow: 1;
-}
-
-.product__title {
-  font-family: "Oswald", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 20px;
-  text-transform: uppercase;
-  color: #222222;
-  margin: 0 0 14px 0;
-}
-
-.product__title-more {
-  margin-bottom: 8px;
-  font-family: "Oswald", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 20px;
-  text-transform: uppercase;
-  color: #222222;
-  text-align: center;
-}
-
-.product__description {
-  text-align: center;
-  font-size: 12px;
-  line-height: 16px;
-  margin: 0 0 21px 0;
-}
-
-.product__characteristics {
-  margin: 0;
-}
-
-.product__characteristics-item {
-  display: flex;
-  justify-content: space-between;
-}
-
-.product__characteristics-description {
-  text-align: center;
-  font-size: 12px;
-  line-height: 16px;
-  margin: 0;
-}
-
-.product__characteristics-definite {
-  text-align: center;
-  font-size: 12px;
-  line-height: 16px;
-  margin: 0;
-}
-
-.product__link {
-  cursor: pointer;
-  text-decoration: none;
-}
-
-.product__button {
-  background-color: #f2f2f2;
-  text-align: center;
-  font-family: "Oswald", sans-serif;
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
-  border: 0;
-  padding: 10px 0;
-  width: 100%;
-  cursor: pointer;
-  display: block;
-  text-decoration: none;
-  color: inherit;
-
-  &:hover {
-    background-color: #ebebeb;
-
-    &:active {
-      color: rgba(68, 68, 68, 0.3);
-    }
+  &__wrapper {
+    display: flex;
+    margin-bottom: 13px;
   }
-}
 
-.product__link-more {
-  display: block;
-  width: 30px;
-  height: 30px;
-  cursor: pointer;
-  position: relative;
-  margin: 6px auto 23px auto;
-}
+  &__info {
+    flex-grow: 1;
+  }
 
-.product__link-more::before,
-.product__link-more::after {
-  content: "";
-  position: absolute;
-  width: 30px;
-  height: 2px;
-  background-color: #d3d3d3;
-  top: 15px;
-  left: 0;
-}
+  &__title {
+    font-family: @oswald;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #222222;
+    margin: 0 0 14px 0;
+    width: 80px;
+  }
 
-.product__link-more::after {
-  transform: rotate(90deg);
+  &__title-more {
+    margin-bottom: 8px;
+    font-family: @oswald;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #222222;
+    text-align: center;
+  }
+
+  &__description {
+    text-align: center;
+    font-size: 12px;
+    line-height: 16px;
+    margin: 0 0 21px 0;
+  }
+
+  &__characteristics {
+    margin: 0;
+  }
+
+  &__characteristics-item {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .product__characteristics-description {
+    text-align: center;
+    font-size: 12px;
+    line-height: 16px;
+    margin: 0;
+  }
+
+  &__characteristics-definite {
+    text-align: center;
+    font-size: 12px;
+    line-height: 16px;
+    margin: 0;
+  }
+
+  &__link {
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  &__button {
+    background-color: #f2f2f2;
+    text-align: center;
+    font-family: @oswald;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    border: 0;
+    padding: 10px 0;
+    width: 100%;
+    cursor: pointer;
+    display: block;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  &__button:hover {
+    background-color: #ebebeb;
+  }
+
+  &__button:active {
+    color: rgba(68, 68, 68, 0.3);
+  }
+
+  &__link-more {
+    display: block;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    position: relative;
+    margin: 6px auto 23px auto;
+  }
+
+  &__link-more::before,
+  &__link-more::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background-color: #d3d3d3;
+    top: 15px;
+    left: 0;
+  }
+
+  &__link-more::after {
+    transform: rotate(90deg);
+  }
 }

@@ -1,3 +1,5 @@
+@import "variables.less";
+
 .extra {
   padding: 0;
   margin: 0 0 34px 0;
@@ -5,13 +7,13 @@
 }
 
 .extra::before {
-  content: "";
   width: 139px;
   height: 2px;
-  background-color: #68b738;
+  background-color: @light-green;
   position: absolute;
   right: -20px;
   top: -43px;
+  content: "";
 }
 
 .extra__list {
@@ -50,37 +52,37 @@
   box-sizing: border-box;
 }
 
+.extra__control:hover .extra__control-input[type="radio"]:checked {
+  border: 1px solid #bababa;
+}
+
+.extra__control-label {
+  font-family: @oswald;
+  font-size: 16px;
+  text-transform: uppercase;
+  height: 30px;
+  display: flex;
+  align-items: center;
+}
+
 .extra__control-input[type="checkbox"]:checked + .extra__control-mark::before {
   position: absolute;
-  top: 12px;
+  top: 13px;
   left: 11px;
   width: 15px;
   height: 2px;
-  background-color: #68b738;
+  background-color: @light-green;
   transform: rotate(135deg);
   content: "";
 }
 
 .extra__control-input[type="checkbox"]:checked + .extra__control-mark::after {
   position: absolute;
-  top: 14px;
-  left: 6px;
+  top: 15px;
+  left: 5px;
   width: 10px;
   height: 2px;
-  background-color: #68b738;
+  background-color: @light-green;
   transform: rotate(45deg);
   content: "";
-}
-
-.extra__control:hover .extra__control-input[type="radio"]:checked {
-  border: 1px solid #bababa;
-}
-
-.extra__control-label {
-  font-family: "Oswald", sans-serif;
-  font-size: 16px;
-  text-transform: uppercase;
-  height: 30px;
-  display: flex;
-  align-items: center;
 }

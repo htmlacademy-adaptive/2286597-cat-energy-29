@@ -1,3 +1,5 @@
+@import "variables.less";
+
 .social-media {
   margin: 0;
   padding: 0;
@@ -5,21 +7,21 @@
   list-style-type: none;
   justify-self: center;
   flex-wrap: wrap;
-}
 
-.social-media__item {
-  margin-right: 26px;
-  position: relative;
-}
+  &__item {
+    margin-right: 26px;
+    position: relative;
+  }
 
-.social-media__item:last-of-type {
-  margin-right: 0;
-}
+  &__item:last-of-type {
+    margin-right: 0;
+  }
 
-.social-media__link:hover .social-media__icon-color {
-  fill: #68b738;
-}
+  &__link:hover .social-media__icon-color {
+    fill: @light-green;
+  }
 
-.social-media__link:active {
-  opacity: 0.3;
+  &__link:active {
+    opacity: 0.3;
+  }
 }

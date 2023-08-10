@@ -1,20 +1,22 @@
+@import "variables.less";
+
 .products {
   padding: 0 20px 0 20px;
-}
 
-.products__title {
-  color: #000000;
-  font-family: "Oswald", sans-serif;
-  font-size: 36px;
-  font-weight: 400;
-  line-height: 36px;
-  margin: 0;
-  text-align: start;
-  margin-top: 27px;
-  margin-bottom: 41px;
-  position: relative;
+  &__title {
+    color: @black;
+    font-family: @oswald;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 36px;
+    margin: 0;
+    text-align: start;
+    margin-top: 27px;
+    margin-bottom: 41px;
+    position: relative;
+  }
 
-  &::after {
+  &__title::after {
     content: "";
     width: 320px;
     position: absolute;
@@ -23,14 +25,14 @@
     bottom: -41px;
     left: -20px;
   }
-}
 
-.products__list {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
 
-.products__list-item {
-  padding: 19px 0 25px 0;
+  &__list-item {
+    padding: 19px 0 25px 0;
+  }
 }

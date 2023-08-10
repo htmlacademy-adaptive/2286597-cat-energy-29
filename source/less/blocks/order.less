@@ -1,11 +1,13 @@
+@import "variables.less";
+
 .order {
-  background-color: #68b738;
+  background-color: @light-green;
   text-align: center;
-  font-family: "Oswald", sans-serif;
+  font-family: @oswald;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-  color: #ffffff;
+  color: @white;
   border: 0;
   padding: 10px 0;
   cursor: pointer;
@@ -14,10 +16,10 @@
   text-decoration: none;
 
   &:hover {
-    background-color: #5eaa2f;
+    background-color: @dark-green;
+  }
 
-    &:active {
-      color: rgba(255, 255, 255, 0.3);
-    }
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
   }
 }

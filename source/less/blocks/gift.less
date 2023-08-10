@@ -1,23 +1,25 @@
+@import "variables.less";
+
 .gift {
   margin: 35px 20px;
   background-image: url("../img/gift-cat.png");
-}
 
-.gift__description {
-  color: #ffffff;
-  text-align: center;
-  font-size: 16px;
-  line-height: 20px;
-  margin: 126px 0 0 0;
-}
+  &__description {
+    color: @white;
+    text-align: center;
+    font-size: 16px;
+    line-height: 20px;
+    margin: 126px 0 0 0;
+  }
 
-.gift__icon-position {
-  background-image: url("../img/gift-icon.svg");
-  background-repeat: no-repeat;
-  background-position: center 60px;
-  width: 280px;
-  padding: 60px  60px 42px 59px;
-  box-sizing: border-box;
-  display: block;
-  height: auto;
+  &__icon-position {
+    background-image: url("../img/gift-icon.svg");
+    background-repeat: no-repeat;
+    background-position: center 60px;
+    width: 280px;
+    padding: 60px  60px 42px 59px;
+    box-sizing: border-box;
+    display: block;
+    height: auto;
+  }
 }
