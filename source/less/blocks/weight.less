@@ -1,0 +1,80 @@
+@import "variables.less";
+
+.weight {
+  padding: 22px 0 45px 0;
+  position: relative;
+
+  &::after {
+    content: "";
+    background-color: #ebebeb;
+    width: 320px;
+    height: 1px;
+    position: absolute;
+    bottom: 26px;
+    left: -20px;
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  &__item {
+    margin-bottom: 13px;
+    height: 30px;
+  }
+
+  &__item:last-child {
+    margin-bottom: 0;
+  }
+
+  &__control {
+    position: relative;
+    display: block;
+    padding-left: 45px;
+    height: 30px;
+  }
+
+  &__control:hover &__control-mark {
+    border: 1px solid #bababa;
+  }
+
+  &__control-mark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #cdcdcd;
+    box-sizing: border-box;
+  }
+
+  &__control:hover &__control-input[type="radio"]:checked {
+    border: 1px solid #bababa;
+  }
+
+  &__control-label {
+    font-family: @oswald;
+    font-size: 16px;
+    text-transform: uppercase;
+    height: 30px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__control-input[type="radio"] + &__control-mark {
+    border-radius: 50%;
+  }
+
+  &__control-input[type="radio"]:checked + &__control-mark::before {
+    position: absolute;
+    top: 8.3px;
+    left: 8.3px;
+    width: 13px;
+    height: 13px;
+    background-color: @light-green;
+    border-radius: 50%;
+    content: "";
+  }
+}

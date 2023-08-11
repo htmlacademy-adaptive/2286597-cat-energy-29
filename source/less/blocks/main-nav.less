@@ -1,0 +1,33 @@
+@import "variables.less";
+
+.main-nav {
+  position: relative;
+
+  &__toggle {
+    border: 0;
+    padding: 0;
+    background-image: url("../img/burger-icon.svg");
+    background-color: @white;
+    width: 24px;
+    height: 24px;
+  }
+
+  &__toggle:focus-within {
+    background-image: url("../img/cross-popover.svg");
+    background-size: contain;
+  }
+
+  &__toggle:focus-within .popover {
+    display: block;
+  }
+
+  &__popover {
+    width: 320px;
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+}

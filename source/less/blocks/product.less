@@ -1,0 +1,129 @@
+@import "variables.less";
+
+.product {
+  position: relative;
+
+  &::after {
+    content: "";
+    background-color: #ebebeb;
+    width: 320px;
+    height: 1px;
+    position: absolute;
+    bottom: 0;
+    left: -20px;
+  }
+
+  &__wrapper {
+    display: flex;
+    margin-bottom: 13px;
+  }
+
+  &__info {
+    flex-grow: 1;
+  }
+
+  &__title {
+    font-family: @oswald;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #222222;
+    margin: 0 0 14px 0;
+    width: 80px;
+  }
+
+  &__title-more {
+    margin-bottom: 8px;
+    font-family: @oswald;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #222222;
+    text-align: center;
+  }
+
+  &__description {
+    text-align: center;
+    font-size: 12px;
+    line-height: 16px;
+    margin: 0 0 21px 0;
+  }
+
+  &__characteristics {
+    margin: 0;
+  }
+
+  &__characteristics-item {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .product__characteristics-description {
+    text-align: center;
+    font-size: 12px;
+    line-height: 16px;
+    margin: 0;
+  }
+
+  &__characteristics-definite {
+    text-align: center;
+    font-size: 12px;
+    line-height: 16px;
+    margin: 0;
+  }
+
+  &__link {
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  &__button {
+    background-color: #f2f2f2;
+    text-align: center;
+    font-family: @oswald;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    border: 0;
+    padding: 10px 0;
+    width: 100%;
+    cursor: pointer;
+    display: block;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  &__button:hover {
+    background-color: #ebebeb;
+  }
+
+  &__button:active {
+    color: rgba(68, 68, 68, 0.3);
+  }
+
+  &__link-more {
+    display: block;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    position: relative;
+    margin: 6px auto 23px auto;
+  }
+
+  &__link-more::before,
+  &__link-more::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background-color: #d3d3d3;
+    top: 15px;
+    left: 0;
+  }
+
+  &__link-more::after {
+    transform: rotate(90deg);
+  }
+}
