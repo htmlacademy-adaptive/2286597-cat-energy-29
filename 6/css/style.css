@@ -120,6 +120,18 @@
   background-image: url("../img/main-info-cat.jpg");
   background-repeat: no-repeat;
   background-position: center top;
+  position: relative;
+}
+.main-information::before {
+  content: "";
+  background-color: #68b738;
+  opacity: 0.85;
+  width: 320px;
+  height: 302px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 2;
 }
 .main-information__title {
   color: #ffffff;
@@ -130,6 +142,8 @@
   line-height: 36px;
   margin: 0;
   margin-bottom: 25px;
+  z-index: 3;
+  position: relative;
 }
 .main-information__description {
   color: #ffffff;
@@ -139,6 +153,12 @@
   text-align: center;
   margin: 0;
   margin-bottom: 29px;
+  z-index: 3;
+  position: relative;
+}
+.main-information__image {
+  z-index: 3;
+  position: relative;
 }
 .main-information__link {
   padding: 8px 10px 8px 10px;
@@ -154,6 +174,7 @@
   text-decoration: none;
   cursor: pointer;
   margin-bottom: 20px;
+  z-index: 3;
 }
 .main-information__link:hover {
   background-color: #5eaa2f;
@@ -431,6 +452,8 @@
 }
 .location__map {
   margin-bottom: -4px;
+  width: 320px;
+  height: 362px;
 }
 .social-media {
   margin: 0;
@@ -770,7 +793,7 @@
 .select-program__button:hover {
   background-color: #5eaa2f;
 }
-.select-program:active {
+.select-program__button:active {
   color: rgba(255, 255, 255, 0.3);
 }
 .select-program__important {
@@ -829,10 +852,10 @@
   border: 1px solid #cdcdcd;
 }
 .about-pet__input:focus {
-  border: 1px solid #444444;
+  border: 2px solid #444444;
   outline: 0;
 }
-.about-pet__input::grammar-error {
+.about-pet__input:invalid {
   border: 2px solid #ff8282;
   outline: 0;
 }
@@ -936,6 +959,10 @@
 }
 .contacts__input:focus {
   border: 2px solid #444444;
+  outline: 0;
+}
+.contacts__input:invalid {
+  border: 2px solid #ff8282;
   outline: 0;
 }
 .contacts__input-email {
@@ -1066,6 +1093,11 @@
 }
 .logo:active .logo__image-color {
   opacity: 0.6;
+}
+.changes-slider__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 @font-face {
   font-family: "Lato";
