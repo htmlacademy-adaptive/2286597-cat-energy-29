@@ -6,6 +6,19 @@
   background-image: url("../img/main-info-cat.jpg");
   background-repeat: no-repeat;
   background-position: center top;
+  position: relative;
+
+  &::before {
+    content: "";
+    background-color: @light-green;
+    opacity: 0.85;
+    width: 320px;
+    height: 302px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+  }
 
   &__title {
     color: @white;
@@ -16,6 +29,8 @@
     line-height: 36px;
     margin: 0;
     margin-bottom: 25px;
+    z-index: 3;
+    position: relative;
   }
 
   &__description {
@@ -26,6 +41,13 @@
     text-align: center;
     margin: 0;
     margin-bottom: 29px;
+    z-index: 3;
+    position: relative;
+  }
+
+  &__image {
+    z-index: 3;
+    position: relative;
   }
 
   &__link {
@@ -42,6 +64,7 @@
     text-decoration: none;
     cursor: pointer;
     margin-bottom: 20px;
+    z-index: 3;
   }
 
   &__link:hover {
