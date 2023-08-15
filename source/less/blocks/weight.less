@@ -4,6 +4,17 @@
   padding: 22px 0 45px 0;
   position: relative;
 
+  @media (min-width: @tablet-width) {
+    padding: 23px 27px 27px 27px;
+    margin-bottom: 75px;
+    border: 1px solid #e7e7e7;
+    box-sizing: border-box;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 24px 28px;
+  }
+
   &::after {
     content: "";
     background-color: #ebebeb;
@@ -12,6 +23,14 @@
     position: absolute;
     bottom: 26px;
     left: -20px;
+
+    @media (min-width: @tablet-width) {
+      display: none;
+    }
+
+    @media (min-width: @desktop-width) {
+      display: none;
+    }
   }
 
   &__list {
@@ -23,6 +42,10 @@
   &__item {
     margin-bottom: 13px;
     height: 30px;
+
+    @media (min-width: @tablet-width) {
+      height: 40px;
+    }
   }
 
   &__item:last-child {
@@ -34,6 +57,11 @@
     display: block;
     padding-left: 45px;
     height: 30px;
+
+    @media (min-width: @tablet-width) {
+      height: 40px;
+      padding-left: 60px;
+    }
   }
 
   &__control:hover &__control-mark {
@@ -48,6 +76,11 @@
     height: 30px;
     border: 1px solid #cdcdcd;
     box-sizing: border-box;
+
+    @media (min-width: @tablet-width) {
+      width: 40px;
+      height: 40px;
+    }
   }
 
   &__control:hover &__control-input[type="radio"]:checked {
@@ -55,12 +88,19 @@
   }
 
   &__control-label {
+    color: #444444;
     font-family: @oswald;
     font-size: 16px;
     text-transform: uppercase;
     height: 30px;
     display: flex;
     align-items: center;
+
+    @media (min-width: @tablet-width) {
+      font-size: 20px;
+      line-height: normal;
+      height: 40px;
+    }
   }
 
   &__control-input[type="radio"] + &__control-mark {
@@ -76,5 +116,12 @@
     background-color: @light-green;
     border-radius: 50%;
     content: "";
+
+    @media (min-width: @tablet-width) {
+      top: 10.3px;
+      left: 10.3px;
+      width: 18px;
+      height: 18px;
+    }
   }
 }
