@@ -1,10 +1,26 @@
 @import "variables.less";
 
 .location {
+  position: relative;
+
   &__info {
-    padding: 26px 20px 26px 20px;
+    padding: 26px 20px;
     background-color: @white;
     display: flex;
+
+    @media (min-width: @tablet-width) {
+      padding: 60px 70px;
+      justify-content: space-between;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding: 60px 80px;
+      max-width: 565px;
+      box-sizing: border-box;
+      position: absolute;
+      top: 95px;
+      left: 110px;
+    }
   }
 
   &__info-gray {
@@ -19,6 +35,12 @@
     line-height: 20px;
     text-transform: uppercase;
     margin: 0;
+
+    @media (min-width: @tablet-width) {
+      max-width: 170px;
+      font-size: 20px;
+      line-height: 26px;
+    }
   }
 
   &__address {
@@ -28,11 +50,27 @@
     font-size: 14px;
     font-style: normal;
     margin: 0;
+    padding: 0;
+
+    @media (min-width: @tablet-width) {
+      max-width: 160px;
+      font-size: 16px;
+      line-height: 20px;
+    }
   }
 
   &__map {
     margin-bottom: -4px;
     width: 320px;
     height: 362px;
+
+    @media (min-width: @tablet-width) {
+      width: 768px;
+      height: 400px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 1320px;
+    }
   }
 }

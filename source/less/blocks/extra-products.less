@@ -1,6 +1,14 @@
 .extra-products {
   padding: 0 20px 0 20px;
 
+  @media (min-width: @tablet-width) {
+    padding: 0 30px 0 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 50px 0 50px;
+  }
+
   &__title {
     margin: 25px 0 36px 0;
     color: #000000;
@@ -10,6 +18,27 @@
     font-weight: 400;
     line-height: 24px;
     position: relative;
+
+    @media (min-width: @tablet-width) {
+      font-size: 36px;
+      line-height: 36px;
+      margin: 68px 0 80px 40px;
+    }
+
+    @media (min-width: @desktop-width) {
+      font-size: 36px;
+      line-height: 36px;
+      margin: 68px 0 80px 0;
+    }
+  }
+
+  &__wrapper {
+    @media (min-width: @desktop-width) {
+      display: grid;
+      grid-template-columns: 895px 245px;
+      column-gap: 80px;
+      margin-bottom: 86px;
+    }
   }
 
   &__title::before {
@@ -20,6 +49,18 @@
     background-color: #68b738;
     top: 16px;
     right: -20px;
+
+    @media (min-width: @tablet-width) {
+      width: 320px;
+      top: 20px;
+      right: -30px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 952px;
+      top: 20px;
+      right: -110px;
+    }
   }
 
   &__title::after {
@@ -30,17 +71,65 @@
     background-color: #cdcdcd;
     bottom: -36px;
     left: 0;
+
+    @media (min-width: @tablet-width) {
+      width: 30px;
+      height: 2px;
+      background-color: #68b738;
+      top: 20px;
+      left: -70px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 70px;
+      left: -110px;
+    }
   }
 
   &__list {
     margin: 0;
     padding: 0;
     list-style-type: none;
+
+    @media (min-width: @tablet-width) {
+      border: 1px solid #cdcdcd;
+      padding: 0 38px;
+    }
+
+    @media (min-width: @desktop-width) {
+      border: none;
+      padding: 0;
+    }
   }
 
   &__item {
     padding: 13px 0 19px 0;
     position: relative;
+
+    @media (min-width: @tablet-width) {
+      padding: 26px 0 28px 0;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 895px;
+      display: grid;
+      align-items: center;
+      padding: 15px 0 17px 0;
+      grid-template-columns: 570px 245px;
+      column-gap: 80px;
+    }
+  }
+
+  &__item:first-child::before {
+    @media (min-width: @desktop-width) {
+      width: 895px;
+      content: "";
+      height: 1px;
+      position: absolute;
+      background-color: #cdcdcd;
+      top: 0;
+      left: 0;
+    }
   }
 
   &__item::after {
@@ -51,5 +140,17 @@
     background-color: #cdcdcd;
     bottom: 0;
     left: 0;
+
+    @media (min-width: @tablet-width) {
+      width: 708px;
+      left: -38px;
+      background-color: #cdcdcd;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 895px;
+      left: 0;
+      background-color: #cdcdcd;
+    }
   }
 }

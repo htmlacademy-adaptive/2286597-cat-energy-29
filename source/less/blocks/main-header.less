@@ -13,6 +13,16 @@
     align-items: center;
     box-sizing: border-box;
     position: relative;
+
+    @media (min-width: @tablet-width) {
+      width: 708px;
+      padding: 25px 0 0 0;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 1220px;
+      padding: 56px 0 0 0;
+    }
   }
 
   &__wrapper::after {
@@ -23,6 +33,10 @@
     height: 1px;
     bottom: 0;
     left: 0;
+
+    @media (min-width: @tablet-width) {
+      display: none;
+    }
   }
 
   &__wrapper-position {

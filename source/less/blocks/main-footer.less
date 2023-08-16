@@ -4,11 +4,35 @@
   width: 320px;
   margin: 0 auto;
 
+  @media (min-width: @tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1320px;
+    margin: 0 auto;
+  }
+
   &__list {
     margin: 0;
     list-style-type: none;
     background-color: #f2f2f2;
-    padding: 40px 20px 40px 20px;
+    padding: 40px 20px;
+    box-sizing: border-box;
+
+    @media (min-width: @tablet-width) {
+      display: flex;
+      justify-content: space-between;
+      padding: 55px 30px;
+      align-items: center;
+    }
+
+    @media (min-width: @desktop-width) {
+      display: flex;
+      justify-content: space-between;
+      padding: 66px 50px;
+      width: 1320px;
+    }
   }
 
   &__item {
@@ -16,6 +40,14 @@
     margin-bottom: 40px;
     justify-content: center;
     position: relative;
+
+    @media (min-width: @tablet-width) {
+      margin-bottom: 0;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-bottom: 0;
+    }
   }
 
   &__item::after {
@@ -25,12 +57,25 @@
     position: absolute;
     bottom: -20px;
     background-color: #d9d9d9;
+
+    @media (min-width: @tablet-width) {
+      display: none;
+    }
+
+    @media (min-width: @desktop-width) {
+      display: none;
+    }
   }
 
   &__item:last-child {
     margin-bottom: 0;
     display: flex;
     justify-content: space-between;
+
+    @media (min-width: @tablet-width) {
+      width: 163px;
+      justify-content: space-between;
+    }
   }
 
   &__item:last-child:hover .htmlacademy__icon-color {

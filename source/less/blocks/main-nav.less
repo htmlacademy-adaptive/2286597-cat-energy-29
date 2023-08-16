@@ -3,18 +3,17 @@
 .main-nav {
   position: relative;
 
-  &__toggle {
-    border: 0;
-    padding: 0;
-    background-image: url("../img/burger-icon.svg");
-    background-color: @white;
-    width: 24px;
-    height: 24px;
-  }
-
   &__toggle:focus-within {
     background-image: url("../img/cross-popover.svg");
     background-size: contain;
+
+    @media (min-width: @tablet-width) {
+      background-image: none;
+    }
+
+    @media (min-width: @desktop-width) {
+      background-image: none;
+    }
   }
 
   &__toggle:focus-within .popover {
@@ -29,5 +28,31 @@
     margin: 0;
     padding: 0;
     list-style-type: none;
+
+    @media (min-width: @tablet-width) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+  &__toggle {
+    border: 0;
+    padding: 0;
+    background-image: url("../img/burger-icon.svg");
+    background-color: @white;
+    width: 24px;
+    height: 24px;
+
+    @media (min-width: @tablet-width) {
+      background-image: none;
+      height: auto;
+      min-width: 436px;
+    }
+
+    @media (min-width: @desktop-width) {
+      background-image: none;
+      height: auto;
+      min-width: 475px;
+    }
   }
 }

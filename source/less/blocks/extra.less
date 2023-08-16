@@ -5,7 +5,38 @@
   margin: 0 0 34px 0;
   position: relative;
 
+  @media (min-width: @tablet-width) {
+    padding: 0 40px;
+    margin-bottom: 54px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+    margin-bottom: 61px;
+  }
+
   &::before {
+    content: "";
+    width: 30px;
+    height: 2px;
+    background-color: @light-green;
+    position: absolute;
+    left: -40px;
+    top: -88px;
+    display: none;
+
+    @media (min-width: @tablet-width) {
+      display: block;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 70px;
+      top: -88px;
+      left: -110px;
+    }
+  }
+
+  &::after {
     width: 139px;
     height: 2px;
     background-color: @light-green;
@@ -13,17 +44,46 @@
     right: -20px;
     top: -43px;
     content: "";
+
+    @media (min-width: @tablet-width) {
+      width: 446px;
+      top: -88px;
+      right: -30px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 1078px;
+      top: -88px;
+      right: -110px;
+    }
   }
 
   &__list {
     margin: 0;
     padding: 0;
     list-style-type: none;
+
+    @media (min-width: @tablet-width) {
+      display: grid;
+      grid-template-columns: repeat(2, 284px);
+      row-gap: 32px;
+      column-gap: 60px;
+    }
+
+    @media (min-width: @desktop-width) {
+      display: grid;
+      grid-template-columns: repeat(4, 245px);
+      column-gap: 80px;
+    }
   }
 
   &__item {
     height: 30px;
     margin-bottom: 13px;
+
+    @media (min-width: @tablet-width) {
+      height: 40px;
+    }
   }
 
   &__item:last-child {
@@ -35,6 +95,11 @@
     display: block;
     padding-left: 45px;
     height: 30px;
+
+    @media (min-width: @tablet-width) {
+      height: 40px;
+      padding-left: 60px;
+    }
   }
 
   &__control:hover .extra__control-mark {
@@ -49,6 +114,11 @@
     height: 30px;
     border: 1px solid #cdcdcd;
     box-sizing: border-box;
+
+    @media (min-width: @tablet-width) {
+      width: 40px;
+      height: 40px;
+    }
   }
 
   &__control:hover .extra__control-input[type="radio"]:checked {
@@ -62,6 +132,12 @@
     height: 30px;
     display: flex;
     align-items: center;
+
+    @media (min-width: @tablet-width) {
+      font-size: 20px;
+      line-height: normal;
+      height: 40px;
+    }
   }
 
   &__control-input[type="checkbox"]:checked + .extra__control-mark::before {
@@ -73,6 +149,13 @@
     background-color: @light-green;
     transform: rotate(135deg);
     content: "";
+
+    @media (min-width: @tablet-width) {
+      top: 17px;
+      left: 14px;
+      width: 20px;
+      height: 2px;
+    }
   }
 
   &__control-input[type="checkbox"]:checked + .extra__control-mark::after {
@@ -84,5 +167,12 @@
     background-color: @light-green;
     transform: rotate(45deg);
     content: "";
+
+    @media (min-width: @tablet-width) {
+      top: 20px;
+      left: 8px;
+      width: 12px;
+      height: 2px;
+    }
   }
 }
