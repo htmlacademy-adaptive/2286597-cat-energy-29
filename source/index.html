@@ -16,33 +16,35 @@
             <path class="logo__image-color" fill="#fff" d="M0 0h101v18H0z"/></clipPath></defs>
         </svg>
       </a>
-      <nav class="main-nav">
+      <!-- main-nav--opened  -->
+      <nav class="main-nav main-nav--nojs main-nav--closed">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">
             Открыть меню
           </span>
-          <div class="main-nav__popover popover">
-            <ul class="main-nav__list popover__list">
-              <li class="popover__item popover__item--active ">
-                <a href="#" class="popover__link popover__link-color">
-                  Главная
-                </a>
-              </li>
-              <li class="popover__item popover__item-color">
-                <a href="catalog.html" class="popover__link popover__link-color">
-                  каталог продукции
-                </a>
-              </li>
-              <li class="popover__item popover__item-color">
-                <a href="form.html" class="popover__link popover__link-color">
-                  подбор программы
-                </a>
-              </li>
-            </ul>
-          </div>
         </button>
+        <div class="main-nav__popover popover">
+           <ul class="main-nav__list popover__list">
+             <li class="popover__item popover__item-color">
+               <a href="#" class="popover__link popover__link--active  popover__link-color popover__link-color--active">
+                 Главная
+               </a>
+             </li>
+             <li class="popover__item">
+               <a href="catalog.html" class="popover__link popover__link-color">
+                 каталог продукции
+               </a>
+             </li>
+             <li class="popover__item ">
+               <a href="form.html" class="popover__link popover__link-color">
+                 подбор программы
+               </a>
+             </li>
+           </ul>
+         </div>
       </nav>
     </div>
+    <script src="./js/script.js"></script>
   </header>
   <main class="main-container">
     <h1 class="visually-hidden">
