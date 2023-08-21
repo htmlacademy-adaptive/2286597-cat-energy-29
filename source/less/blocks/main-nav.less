@@ -2,57 +2,91 @@
 
 .main-nav {
   position: relative;
+  align-self: center;
+  background-color: @white;
+  width: 320px;
 
-  &__toggle:focus-within {
-    background-image: url("../img/cross-popover.svg");
-    background-size: contain;
-
-    @media (min-width: @tablet-width) {
-      background-image: none;
-    }
-
-    @media (min-width: @desktop-width) {
-      background-image: none;
-    }
+  @media (min-width: @tablet-width) {
+    width: 436px;
   }
 
-  &__toggle:focus-within .popover {
-    display: block;
-  }
-
-  &__popover {
-    width: 320px;
-  }
-
-  &__list {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-
-    @media (min-width: @tablet-width) {
-      display: flex;
-      flex-wrap: wrap;
-    }
+  @media (min-width: @desktop-width) {
+    width: 475px;
+    background: none;
   }
 
   &__toggle {
-    border: 0;
-    padding: 0;
-    background-image: url("../img/burger-icon.svg");
-    background-color: @white;
+    position: absolute;
+    top: -28px;
+    right: 0;
+    z-index: 2;
+    display: block;
     width: 24px;
     height: 24px;
+    background-color: @white;
+    cursor: pointer;
+    border: none;
 
     @media (min-width: @tablet-width) {
-      background-image: none;
-      height: auto;
-      min-width: 436px;
+      display: none;
     }
+  }
 
-    @media (min-width: @desktop-width) {
-      background-image: none;
-      height: auto;
-      min-width: 475px;
-    }
+  &--closed .main-nav__toggle::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 2px;
+    background-color: @black;
+    box-shadow: 0 8px 0 0 @black, 0 16px 0 0 @black;
+  }
+
+  &--nojs .main-nav__toggle {
+    display: none;
+  }
+
+  &--nojs .popover {
+    position: relative;
+    margin-left: -40px;
+    margin-bottom: -4px;
+  }
+}
+
+.main-nav--opened .main-nav__toggle {
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 25px;
+    height: 2px;
+    background-color: @black;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: fade(#ffffff, 30%);
+  }
+}
+
+.main-nav--closed .popover {
+  @media (min-width: 320px) {
+    display: none;
+  }
+
+  @media (min-width: @tablet-width) {
+    display: block;
   }
 }
