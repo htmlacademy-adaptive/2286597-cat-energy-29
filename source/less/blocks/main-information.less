@@ -15,7 +15,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding: 30px 80px 82px 80px;
+    padding: 110px 80px 265px 80px;
   }
 
   &::before {
@@ -33,14 +33,26 @@
       display: none;
     }
 
-
     @media (min-width: @desktop-width) {
       display: block;
       width: 720px;
       height: 694px;
-      top: -96px;
+      top: -176px;
       right: 0;
       left: auto;
+    }
+  }
+
+  &::after {
+    @media (min-width: @desktop-width) {
+      content: "";
+      position: absolute;
+      width: 720px;
+      height: 694px;
+      top: -176px;
+      right: 0;
+      left: auto;
+      background-image: url("../img/main-info-cat-desktop.jpg");
     }
   }
 
@@ -94,6 +106,7 @@
       font-size: 20px;
       line-height: 20px;
       margin-left: 90px;
+      margin-bottom: 21px;
     }
 
     @media (min-width: @desktop-width) {
@@ -114,14 +127,14 @@
       order: 4;
       margin: 0 auto;
       display: block;
-      margin-top: -84px;
+      margin-top: 0;
     }
 
     @media (min-width: @desktop-width) {
       order: 4;
       position: absolute;
       top: 30px;
-      right: 270px;
+      right: 330px;
       margin: 0;
     }
   }
@@ -152,6 +165,8 @@
       line-height: 20px;
       font-size: 20px;
       padding: 17px 10px 17px 10px;
+      margin-top: -580px;
+      max-height: 54px;
     }
 
     @media (min-width: @desktop-width) {
@@ -163,6 +178,7 @@
       line-height: 20px;
       font-size: 20px;
       padding: 17px 10px 17px 10px;
+      margin-top: -0;
     }
   }
 
