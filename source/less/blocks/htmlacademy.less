@@ -1,11 +1,11 @@
 .htmlacademy {
-  display: flex;
-  justify-content: space-between;
   width: 280px;
+  display: flex;
+  justify-content: flex-start;
+  height: 34px;
 
   @media (min-width: @tablet-width) {
     width: 163px;
-    justify-content: space-between;
   }
 
   &__link {
@@ -15,21 +15,24 @@
     line-height: 20px;
     display: flex;
     align-items: center;
+    position: relative;
   }
 
   &__link:active {
     opacity: 0.3;
   }
 
-  &__pic:active {
-    opacity: 0.3;
-  }
-
   &__icon {
-    --svg-color: #666666;
+    width: 27px;
+    height: 34px;
+    position: absolute;
+    mask-image: url("../img/sprite.svg#htmlacademy__icon");
+    background-color: #666666;
+    right: 0;
+    top: 0;
   }
 
-  &__icon:hover {
-    --svg-color: @light-green;
+  &__link:hover &__icon {
+    background-color: @light-green;
   }
 }

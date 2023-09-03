@@ -7,9 +7,11 @@
   list-style-type: none;
   justify-self: center;
   flex-wrap: wrap;
+  min-height: 18px;
 
   &__item {
     margin-right: 26px;
+    width: 28px;
     position: relative;
   }
 
@@ -17,19 +19,54 @@
     margin-right: 0;
   }
 
-  &__link:hover .social-media__icon-color {
-    fill: @light-green;
+  &__link {
+    height: 22px;
+    display: block;
   }
 
   &__link:active {
     opacity: 0.3;
   }
 
-  &__icon {
-    --svg-color: #666666;
+  &__item:first-child &__link {
+    width: 27px;
+    height: 22px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    mask-image: url("../img/sprite.svg#social-media__icon-1");
+    background-color: #666666;
   }
 
-  &__icon:hover {
-    --svg-color: @light-green;
+  &__item:first-child:hover &__link {
+    background-color: @light-green;
+  }
+
+  &__item:nth-child(2) &__link {
+    width: 24px;
+    height: 22px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    mask-image: url("../img/sprite.svg#social-media__icon-2");
+    background-color: #666666;
+  }
+
+  &__item:nth-child(2):hover &__link {
+    background-color: @light-green;
+  }
+
+  &__item:nth-child(3) &__link {
+    width: 20px;
+    height: 22px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    mask-image: url("../img/sprite.svg#social-media__icon-3");
+    background-color: #666666;
+  }
+
+  &__item:nth-child(3):hover &__link {
+    background-color: @light-green;
   }
 }
