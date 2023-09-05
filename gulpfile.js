@@ -18,6 +18,18 @@ export const styles = () => {
     .pipe(browser.stream());
 }
 
+//Images
+export const optimizeImages = () => {
+  return gulp.src('sourse/img/**/*.{jpg,png}')
+    .pipe(squoosh())
+    .pipe(gulp.dest('build/img'));
+}
+
+export const copyImages = () => {
+  return gulp.src('sourse/img/**/*.{jpg,png}')
+    .pipe(gulp.dest('build/img'));
+}
+
 // Server
 
 const server = (done) => {
