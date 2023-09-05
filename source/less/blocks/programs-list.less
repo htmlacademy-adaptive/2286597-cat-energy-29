@@ -30,9 +30,39 @@
     }
   }
 
+  &__item:first-child {
+    background-image: url("../img/cat-slim.svg");
+    background-repeat: no-repeat;
+    background-position: 21px 20px;
+
+    @media (min-width: @tablet-width) {
+      background-position: 445px 81px;
+      background-size: 200px 211px;
+    }
+
+    @media (min-width: @desktop-width) {
+      background-position: 52px 41px;
+      background-size: 100px 106px;
+    }
+  }
+
   &__item:last-child {
     margin-bottom: 0;
     margin-right: 0;
+    background-image: url("../img/cat-pro.svg");
+    background-repeat: no-repeat;
+    background-position: 13px 24px;
+    background-size: 67px 50px;
+
+    @media (min-width: @tablet-width) {
+      background-position: 411px 91px;
+      background-size: 268px 200px;
+    }
+
+    @media (min-width: @desktop-width) {
+      background-position: 33px 47px;
+      background-size: 134px 100px;
+    }
   }
 
   &__maim {
@@ -40,7 +70,7 @@
     position: relative;
   }
 
-  &__image {
+  &__image-1 {
     margin-right: 20px;
     position: absolute;
 
@@ -49,11 +79,15 @@
       top: 0;
       right: 33px;
       margin: 0;
+      width: 200px;
+      height: 211px;
     }
 
     @media (min-width: @desktop-width) {
       top: 0;
       left: 0;
+      width: 100px;
+      height: 106px;
     }
   }
 
@@ -67,11 +101,15 @@
       right: 0;
       margin: 0;
       left: auto;
+      width: 268px;
+      height: 200px;
     }
 
     @media (min-width: @desktop-width) {
       top: 6px;
       left: 0;
+      width: 134px;
+      height: 100px;
     }
   }
 }

@@ -13,28 +13,36 @@
       width: 202px;
     }
 
-    &:hover .logo__image-color {
+    &:hover .logo__image {
       opacity: 0.8;
     }
 
-    &:active .logo__image-color {
+    &:active .logo__image {
       opacity: 0.6;
     }
   }
 
   &__image {
+    width: 101px;
+    height: 18px;
+
     @media (min-width: @desktop-width) {
       width: 118px;
       height: 21;
+      display: flex;
+      justify-content: center;
     }
   }
 
   &__footer {
-    &:hover .logo__image-color {
+    width: 128px;
+    height: 24px;
+
+    &:hover {
       opacity: 0.8;
     }
 
-    &:active .logo__image-color {
+    &:active {
       opacity: 0.6;
     }
   }
