@@ -38,6 +38,7 @@ return gulp.src('source/*.html')
 
 const scripts = () => {
 return gulp.src('source/js/script.js')
+.pipe(rename('script.min.js'))
 .pipe(gulp.dest('build/js'))
 .pipe(browser.stream());
 }
@@ -152,7 +153,6 @@ optimizeImages,
 gulp.parallel(
 styles,
 html,
-scripts,
 jsMinify,
 svg,
 sprite,
@@ -170,7 +170,6 @@ gulp.parallel(
 styles,
 html,
 scripts,
-jsMinify,
 svg,
 sprite,
 createWebp
