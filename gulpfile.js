@@ -42,6 +42,19 @@ return gulp.src('source/js/script.js')
 .pipe(browser.stream());
 }
 
+const jsMinify = () => {
+  return gulp
+    .src("./source/js/script.js")
+    .pipe(
+      terser({
+        keep_fnames: true,
+        mangle: false,
+      })
+  )
+    .pipe(rename('script.min.js'))
+    .pipe(gulp.dest("./build/js"));
+}
+
 // Images
 
 const optimizeImages = () => {
@@ -86,7 +99,7 @@ inlineSvg: true
 
 const copy = (done) => {
 gulp.src([
-'source/fonts/*.{woff2,woff}',
+'source/fonts/**/*.{woff2,woff}',
 'source/*.ico',
 ], {
 base: 'source'
@@ -140,6 +153,7 @@ gulp.parallel(
 styles,
 html,
 scripts,
+jsMinify,
 svg,
 sprite,
 createWebp
@@ -156,6 +170,7 @@ gulp.parallel(
 styles,
 html,
 scripts,
+jsMinify,
 svg,
 sprite,
 createWebp
