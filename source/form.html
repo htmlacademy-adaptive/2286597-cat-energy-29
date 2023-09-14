@@ -6,6 +6,8 @@
   <title>Кэт энерджи</title>
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/32.png" type="image/png">
+  <link rel="apple-touch-icon" href="img/apple.png">
+  <link rel="manifest" href="manifest.webmanifest">
   <link href="css/style.min.css" rel="stylesheet">
 </head>
 <body class="page__body">
@@ -117,10 +119,16 @@
           <label class="contacts__label">
             E-mail:*
             <input class="contacts__input contacts__input-email" placeholder="kuklachev@gmail.com" type="email" name="email" required>
+            <!--<svg class="contacts__input-email-icon" width="19" height="14">
+              <use xlink:href="#contacts__input-email"></use>
+            </svg>-->
           </label>
-          <label class="contacts__label" for="phone">
+          <label class="contacts__label">
             Телефон:*
             <input class="contacts__input contacts__input-phone" placeholder="8 (960) 900-60-90" type="tel" id="phone" name="phone" required>
+            <!--<svg class="contacts__input-phone-icon" width="17" height="16">
+              <use xlink:href="#contacts__input-phone"></use>
+            </svg>-->
           </label>
         </fieldset>
         <fieldset class="select-program__group comment">

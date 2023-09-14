@@ -100,31 +100,37 @@
   }
 
   &__input-email {
-    background-image: url("../img/email-icon.svg");
-    background-repeat: no-repeat;
-    background-position: 185px 15px;
 
     @media (min-width: @tablet-width) {
-      background-position: 519px 19.5px;
+
     }
 
     @media (min-width: @desktop-width) {
-      background-position: 458px 19.5px;
+
     }
   }
 
   &__input-phone {
-    background-image: url("../img/phone-icon.svg");
-    background-repeat: no-repeat;
-    background-position: 170px 15px;
 
     @media (min-width: @tablet-width) {
-      background-position: 500px 18.5px;
+
     }
 
     @media (min-width: @desktop-width) {
-      background-position: 440px 18.5px;
+
     }
+  }
+
+  &__input-email-icon {
+    position: absolute;
+    top: 16.5px;
+    right: 13.5px;
+    z-index: 3;
+
+  }
+
+  &__input-email-color {
+    --svg-color: #000000;
   }
 
   &__input {

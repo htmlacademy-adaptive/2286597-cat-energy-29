@@ -17,8 +17,8 @@
 
   &__toggle {
     position: absolute;
-    top: -28px;
-    right: 0;
+    top: -32px;
+    right: 1px;
     z-index: 2;
     display: block;
     width: 24px;
@@ -41,16 +41,6 @@
     height: 2px;
     background-color: @black;
     box-shadow: 0 8px 0 0 @black, 0 16px 0 0 @black;
-  }
-
-  &--nojs .main-nav__toggle {
-    display: none;
-  }
-
-  &--nojs .popover {
-    position: relative;
-    margin-left: -40px;
-    margin-bottom: -4px;
   }
 }
 
@@ -89,4 +79,15 @@
   @media (min-width: @tablet-width) {
     display: block;
   }
+}
+
+.main-nav--nojs .main-nav__toggle {
+  display: none;
+}
+
+.main-nav--nojs .popover {
+  position: relative;
+  margin-left: -40px;
+  margin-bottom: -4px;
+  display: block;
 }
