@@ -7,12 +7,12 @@
 
   @media (min-width: @tablet-width) {
     padding: 0 40px;
-    margin-bottom: 54px;
+    margin-bottom: 42px;
   }
 
   @media (min-width: @desktop-width) {
     padding: 0;
-    margin-bottom: 61px;
+    margin-bottom: 49px;
   }
 
   &::before {
@@ -27,11 +27,13 @@
 
     @media (min-width: @tablet-width) {
       display: block;
+      left: -30px;
+      top: -73px;
     }
 
     @media (min-width: @desktop-width) {
       width: 70px;
-      top: -88px;
+      top: -70px;
       left: -110px;
     }
   }
@@ -47,13 +49,13 @@
 
     @media (min-width: @tablet-width) {
       width: 446px;
-      top: -88px;
+      top: -73px;
       right: -30px;
     }
 
     @media (min-width: @desktop-width) {
       width: 1078px;
-      top: -88px;
+      top: -70px;
       right: -110px;
     }
   }
@@ -66,7 +68,7 @@
     @media (min-width: @tablet-width) {
       display: grid;
       grid-template-columns: repeat(2, 284px);
-      row-gap: 32px;
+      row-gap: 18px;
       column-gap: 60px;
     }
 
@@ -79,7 +81,7 @@
 
   &__item {
     height: 30px;
-    margin-bottom: 13px;
+    margin-bottom: 12px;
 
     @media (min-width: @tablet-width) {
       height: 40px;
@@ -173,6 +175,14 @@
       left: 8px;
       width: 12px;
       height: 2px;
+    }
+  }
+
+  & .select-program__group-legend {
+    margin-bottom: 34px;
+
+    @media (min-width: @tablet-width) {
+      margin-bottom: 57px;
     }
   }
 }

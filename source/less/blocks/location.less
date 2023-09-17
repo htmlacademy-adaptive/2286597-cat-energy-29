@@ -97,12 +97,22 @@
       line-height: 20px;
       text-align: right;
     }
+
+    @media (min-width: @desktop-width) {
+      text-align: left;
+      margin-right: -4px;
+    }
   }
 
   &__address-span {
     @media (min-width: @tablet-width) {
       margin-top: 20px;
       display: block;
+    }
+
+    @media (min-width: @desktop-width) {
+      display: block;
+      margin-top: 20px;
     }
   }
 

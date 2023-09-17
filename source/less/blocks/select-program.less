@@ -25,11 +25,11 @@
     @media (min-width: @tablet-width) {
       font-size: 60px;
       line-height: 60px;
-      margin: 66px 0 54px 40px;
+      margin: 60px 0 54px 40px;
     }
 
     @media (min-width: @desktop-width) {
-      margin: 74px 0 56px 0;
+      margin: 68px 0 56px 0;
     }
   }
 
@@ -109,9 +109,13 @@
     @media (min-width: @tablet-width) {
       margin-bottom: 76px;
     }
+
+    @media (min-width: @desktop-width) {
+      margin-bottom: 76px;
+    }
   }
 
-  &__group-legend:nth-child(2) {
+  &__group-legend:nth-of-type(2) {
     margin-bottom: 38px;
 
     @media (min-width: @tablet-width) {
@@ -119,7 +123,7 @@
     }
 
     @media (min-width: @desktop-width) {
-      margin-bottom: 76px;
+      margin-bottom: 66px;
     }
   }
 
@@ -171,7 +175,8 @@
     margin-bottom: 32px;
 
     @media (min-width: @tablet-width) {
-      margin: 0 auto 0 0;
+      margin: -4px auto 0 0;
+      font-size: 16px;
     }
 
     @media (min-width: @desktop-width) {
@@ -183,11 +188,19 @@
     @media (min-width: @tablet-width) {
       margin-bottom: 72px;
     }
+
+    @media (min-width: @desktop-width) {
+      margin-bottom: 68px;
+    }
   }
 
   &__group:nth-child(2) {
     @media (min-width: @tablet-width) {
       margin-bottom: 75px;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-bottom: 68px;
     }
   }
 }

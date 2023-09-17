@@ -15,17 +15,17 @@
     grid-template-columns: repeat(2, 570px);
     column-gap: 80px;
     padding: 0;
-    margin-bottom: 67px;
+    margin-bottom: 46px;
   }
 
   &::before {
     content: "";
-    width: 30px;
+    width: 40px;
     height: 2px;
     background-color: @light-green;
     position: absolute;
     left: -40px;
-    top: -88px;
+    top: -90px;
     display: none;
 
     @media (min-width: @tablet-width) {
@@ -34,7 +34,7 @@
 
     @media (min-width: @desktop-width) {
       width: 70px;
-      top: -88px;
+      top: -89px;
       left: -110px;
     }
   }
@@ -46,17 +46,17 @@
     background-color: @light-green;
     position: absolute;
     right: -20px;
-    top: -69px;
+    top: -70px;
 
     @media (min-width: @tablet-width) {
       width: 146px;
-      top: -88px;
+      top: -90px;
       right: -30px;
     }
 
     @media (min-width: @desktop-width) {
       width: 778px;
-      top: -88px;
+      top: -89px;
       right: -110px;
     }
   }
@@ -71,6 +71,7 @@
     height: 45px;
     vertical-align: middle;
     align-items: center;
+    position: relative;
 
     @media (min-width: @tablet-width) {
       font-size: 20px;
@@ -99,50 +100,46 @@
     border: 0;
   }
 
-  &__input-email {
-
-    @media (min-width: @tablet-width) {
-
-    }
-
-    @media (min-width: @desktop-width) {
-
-    }
-  }
-
-  &__input-phone {
-
-    @media (min-width: @tablet-width) {
-
-    }
-
-    @media (min-width: @desktop-width) {
-
-    }
-  }
-
   &__input-email-icon {
     position: absolute;
     top: 16.5px;
     right: 13.5px;
     z-index: 3;
-
   }
 
-  &__input-email-color {
-    --svg-color: #000000;
+  &__input-phone-icon {
+    position: absolute;
+    top: 16.5px;
+    right: 13.5px;
+    z-index: 3;
+  }
+
+  &__input:focus .contacs__input-phone-color {
+    stroke: @light-green;
+  }
+
+  &__input:focus .contacs__input-email-color {
+    stroke: @light-green;
+  }
+
+  &__input:focus:invalid .contacs__input-phone-color {
+    stroke: #ff8282;
+  }
+
+  &__input:focus:invalid .contacs__input-email-color {
+    stroke: #ff8282;
   }
 
   &__input {
     flex-grow: 1;
-    margin-left: 13px;
+    margin-left: 15px;
     height: 45px;
     display: flex;
     box-sizing: border-box;
     font-family: @oswald;
     font-size: 16px;
     text-transform: uppercase;
-    padding: 14px 36px 13px 15px;
+    padding: 16px 36px 16px 14px;
     outline: 1px solid #e7e7e7;
     border: 0;
 
@@ -150,6 +147,7 @@
       font-size: 20px;
       line-height: normal;
       height: 52px;
+      padding: 16px 36px 16px 18px;
     }
   }
 }
