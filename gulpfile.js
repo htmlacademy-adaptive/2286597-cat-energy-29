@@ -29,7 +29,7 @@ csso()
 
 // HTML
 
-const html = () => {
+export const html = () => {
 return gulp.src('source/*.html')
 .pipe(gulp.dest('build'));
 }
