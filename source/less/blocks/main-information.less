@@ -3,67 +3,15 @@
 .main-information {
   text-align: center;
   padding: 27px 20px 0 20px;
-  background-image: url("../img/main-info-cat.jpg");
-  background-repeat: no-repeat;
-  background-position: center top;
   position: relative;
-
-  @media (min-resolution: 2dppx) {
-    background-image: url("../img/main-info-cat@2x.jpg");
-    background-size: 320px auto;
-  }
 
   @media (min-width: @tablet-width) {
     padding: 62px 30px 0 30px;
-    background-image: none;
     display: grid;
   }
 
   @media (min-width: @desktop-width) {
     padding: 104px 80px 249px 80px;
-  }
-
-  &::before {
-    content: "";
-    background-color: @light-green;
-    opacity: 0.85;
-    width: 320px;
-    height: 302px;
-    position: absolute;
-    left: 0;
-    top: 0;
-    z-index: 2;
-
-    @media (min-width: @tablet-width) {
-      display: none;
-    }
-
-    @media (min-width: @desktop-width) {
-      display: block;
-      width: 720px;
-      height: 752px;
-      top: -176px;
-      right: 0;
-      left: auto;
-    }
-  }
-
-  &::after {
-    @media (min-width: @desktop-width) {
-      content: "";
-      position: absolute;
-      width: 720px;
-      height: 694px;
-      top: -120px;
-      right: 0;
-      left: auto;
-      background-image: url("../img/main-info-cat-desktop.jpg");
-
-      @media (min-resolution: 2dppx) {
-        background-image: url("../img/main-info-cat-desktop@2x.jpg");
-        background-size: 720px auto;
-      }
-    }
   }
 
   &__title {
