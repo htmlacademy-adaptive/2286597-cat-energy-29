@@ -34,7 +34,7 @@
 
   &__wrapper {
     display: flex;
-    margin-bottom: 13px;
+    margin-bottom: 9px;
 
     @media (min-width: @tablet-width) {
       display: block;
@@ -44,6 +44,20 @@
     @media (min-width: @desktop-width) {
       display: block;
       text-align: center;
+    }
+  }
+
+  &__image-1 {
+    @media (min-width: @tablet-width) {
+      width: 168px;
+      height: 172px;
+    }
+  }
+
+  &__image-2 {
+    @media (min-width: @tablet-width) {
+      width: 168px;
+      height: 206px;
     }
   }
 
@@ -59,7 +73,7 @@
     text-transform: uppercase;
     color: #222222;
     margin: 0;
-    margin-bottom: 14px;
+    margin-bottom: 16px;
     width: 80px;
 
     @media (min-width: @tablet-width) {
@@ -111,7 +125,7 @@
       font-size: 16px;
       line-height: 16px;
       text-align: center;
-      margin: 0 auto 87px auto;
+      margin: 0 auto 92px auto;
       width: 165px;
     }
   }
@@ -125,12 +139,13 @@
     justify-content: space-between;
     position: relative;
 
+
     @media (min-width: @tablet-width) {
-      margin-bottom: 14px;
+      margin-bottom: 16px;
     }
 
     @media (min-width: @desktop-width) {
-      margin-bottom: 14px;
+      margin-bottom: 18px;
     }
   }
 
@@ -204,14 +219,34 @@
 
     @media (min-width: @tablet-width) {
       position: absolute;
-      bottom: 300px;
+      top: -45px;
       right: 0;
       left: 0;
     }
 
     @media (min-width: @desktop-width) {
       position: absolute;
-      bottom: 310px;
+      top: -52px;
+      right: 0;
+      left: 0;
+    }
+  }
+
+  &:nth-child(even) .product__link-pic {
+    display: block;
+    width: auto;
+    height: auto;
+
+    @media (min-width: @tablet-width) {
+      position: absolute;
+      top: -77px;
+      right: 0;
+      left: 0;
+    }
+
+    @media (min-width: @desktop-width) {
+      position: absolute;
+      top: -80px;
       right: 0;
       left: 0;
     }

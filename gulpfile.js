@@ -29,7 +29,7 @@ csso()
 
 // HTML
 
-const html = () => {
+export const html = () => {
 return gulp.src('source/*.html')
 .pipe(gulp.dest('build'));
 }
@@ -102,6 +102,7 @@ const copy = (done) => {
 gulp.src([
 'source/fonts/**/*.{woff2,woff}',
 'source/*.ico',
+'source/manifest.webmanifest',
 ], {
 base: 'source'
 })
