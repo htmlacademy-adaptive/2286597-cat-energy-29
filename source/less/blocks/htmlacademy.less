@@ -3,22 +3,18 @@
   display: flex;
   justify-content: flex-start;
   height: 34px;
+  text-decoration: none;
+  font-size: 16px;
+  color: #444444;
+  line-height: 20px;
+  align-items: center;
+  position: relative;
 
   @media (min-width: @tablet-width) {
     width: 163px;
   }
 
-  &__link {
-    text-decoration: none;
-    font-size: 16px;
-    color: #444444;
-    line-height: 20px;
-    display: flex;
-    align-items: center;
-    position: relative;
-  }
-
-  &__link:active {
+  &:active {
     opacity: 0.3;
   }
 
@@ -32,7 +28,7 @@
     top: 0;
   }
 
-  &__link:hover &__icon {
+  &:hover &__icon {
     background-color: @light-green;
   }
 }
