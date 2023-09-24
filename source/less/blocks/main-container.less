@@ -8,7 +8,7 @@
     content: "";
     background-color: @light-green;
     opacity: 0.85;
-    width: 100vw;
+    width: 100%;
     height: 302px;
     position: absolute;
     left: 0;
@@ -22,10 +22,11 @@
     @media (min-width: @desktop-width) {
       display: flex;
       position: absolute;
-      width: 50vw;
+      width: 50%;
       height: 752px;
       top: -176px;
-      left: 50%;
+      right: 0;
+      left: auto;
       opacity: 0.85;
       background-color: @light-green;
       content: "";
@@ -37,7 +38,7 @@
   &--background::after {
     content: "";
     position: absolute;
-    width: 100vw;
+    width: 100%;
     height: 302px;
     left: 0;
     top: 0;
@@ -57,7 +58,7 @@
     @media (min-width: @desktop-width) {
       content: "";
       position: absolute;
-      width: 50vw;
+      width: 50%;
       height: 694px;
       top: -120px;
       right: 0;
