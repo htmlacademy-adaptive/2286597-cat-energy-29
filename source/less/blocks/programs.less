@@ -2,13 +2,18 @@
 
 .programs {
   padding: 0 20px;
+  box-sizing: border-box;
+  margin: 0 auto;
+
 
   @media (min-width: @tablet-width) {
     padding: 0 30px;
+    width: 768px;
   }
 
   @media (min-width: @desktop-width) {
     padding: 0 110px;
+    width: 1440px;
   }
 
   &__title {
@@ -109,12 +114,12 @@
   }
 
   &__narrow {
-    margin-left: 15px;
+    margin-left: 25px;
   }
 
   &__narrow-big {
     display: none;
-    margin-left: 15px;
+    margin-left: 25px;
   }
 
   &__to-catalog:hover .programs__narrow {

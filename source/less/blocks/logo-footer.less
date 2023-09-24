@@ -1,0 +1,22 @@
+@import "variables.less";
+
+.logo-footer {
+  width: 128px;
+  height: 24px;
+  position: relative;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+&__image {
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    bottom: 0;
+  }
+}

@@ -1,3 +1,5 @@
+@import "./blocks/common.less";
+@import "./blocks/font-face.less";
 @import "./blocks/page.less";
 @import "./blocks/main-header.less";
 @import "./blocks/main-nav.less";
@@ -30,38 +32,4 @@
 @import "./blocks/container.less";
 @import "./blocks/variables.less";
 @import "./blocks/main-container.less";
-
-@font-face {
-  font-family: "Lato";
-  font-weight: 400;
-  font-style: normal;
-  src: url("../fonts/lato/Lato-Regular.woff2") format("woff2");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Oswald";
-  font-weight: 400;
-  font-style: normal;
-  src: url("../fonts/oswald/oswaldregular.woff2") format("woff2");
-  font-display: swap;
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  border: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-html {
-  height: 100%;
-}
-
-body {
-  height: 100%;
-}
+@import "./blocks/logo-footer.less";
