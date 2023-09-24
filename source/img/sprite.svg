@@ -17,7 +17,7 @@
       <path fill="#000000" d="m24 6-6.75 5.2V.8L24 6Z"/>
     </svg>
     <svg id="programs__narrow-big" xmlns="http://www.w3.org/2000/svg" width="32" height="12" fill="none" viewBox="0 0 32 12">
-      <path stroke="#000" stroke-width="2" d="M0 6h26"/>
+      <path stroke="#000000" stroke-width="2" d="M0 6h26"/>
       <path class="programs__narrow-color" fill="#000000" d="m32 6-6.75 5.2V.8L32 6Z"/>
     </svg>
     <svg id="social-media__icon-1" xmlns="http://www.w3.org/2000/svg" width="27" height="17" fill="none" viewBox="0 0 27 17">
